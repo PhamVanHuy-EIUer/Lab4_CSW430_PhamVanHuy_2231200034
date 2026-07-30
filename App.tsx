@@ -62,7 +62,7 @@ const TabNavigator = () => {
         tabBarIcon: ({ color, size }) => (
               <Icon source="format-list-bulleted" size={size} color={color} />
             ),
-        headerShown: false
+        // headerShown: false
       }}
       />
       <Tab.Screen name='Favorites' component={FavoriteScreen} 
@@ -70,7 +70,7 @@ const TabNavigator = () => {
           tabBarIcon: ({ color, size }) => (
               <Icon source="star" size={size} color={color} />
             ),
-            headerShown: false
+            // headerShown: false
         }}
       />
     </Tab.Navigator>
@@ -102,8 +102,8 @@ export default function App () {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <TabNavigator/>
-        {/* <DrawerNavigator/> */}
+        {/* <TabNavigator/> */}
+        <DrawerNavigator/>
       </NavigationContainer>
     </Provider>
   )
